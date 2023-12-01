@@ -68,6 +68,11 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         bool wasGrounded = m_Grounded;
         bool loosedGrounding = false;
 
