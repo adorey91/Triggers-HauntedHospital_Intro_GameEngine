@@ -14,7 +14,7 @@ public class Controller : MonoBehaviour
     public static Controller Instance { get; protected set; }
 
     public Camera MainCamera;
-
+    public GameObject pausePanel;
     public Transform CameraPosition;   
 
     [Header("Control Settings")]
@@ -69,18 +69,10 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log("quitting game");
-            Application.Quit();
-        }
-
         bool wasGrounded = m_Grounded;
         bool loosedGrounding = false;
 
-        //we define our own grounded and not use the Character controller one as the character controller can flicker
-        //between grounded/not grounded on small step and the like. So we actually make the controller "not grounded" only
-        //if the character controller reported not being grounded for at least .5 second;
+        
         if (!m_CharacterController.isGrounded)
         {
             if (m_Grounded)
@@ -110,9 +102,10 @@ public class Controller : MonoBehaviour
                 m_Grounded = false;
                 loosedGrounding = true;                
             }
-            if (endgamePanel.activeSelf)
+            if (endgamePanel.activeSelf || pausePanel.activeSelf)
             {
-
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }   
             else
             {
