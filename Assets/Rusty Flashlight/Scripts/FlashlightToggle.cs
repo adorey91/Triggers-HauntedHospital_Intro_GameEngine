@@ -12,7 +12,7 @@ public class FlashlightToggle : MonoBehaviour
     void Start()
     {
         //set default off
-        lightGO.SetActive(isOn);
+        lightGO.SetActive(!isOn);
     }
 
     // Update is called once per frame

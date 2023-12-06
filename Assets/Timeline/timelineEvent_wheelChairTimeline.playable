@@ -39,17 +39,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.9166667
         value: {x: 1.55, y: 9.191507, z: -3.454018}
-        inSlope: {x: -3.8322582, y: 0, z: 0}
-        outSlope: {x: -3.8322582, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 1.45
-        value: {x: 0.04, y: 9.191507, z: -3.454018}
-        inSlope: {x: -5.168182, y: 0, z: 0}
-        outSlope: {x: -5.168182, y: 0, z: 0}
+        inSlope: {x: -5.059459, y: 0, z: 0}
+        outSlope: {x: -5.059459, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -133,17 +124,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.9166667
         value: 1.55
-        inSlope: -3.8322582
-        outSlope: -3.8322582
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.45
-        value: 0.04
-        inSlope: -5.168182
-        outSlope: -5.168182
+        inSlope: -5.059459
+        outSlope: -5.059459
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -197,15 +179,6 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.45
-        value: 9.191507
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
         time: 1.65
         value: 9.191507
         inSlope: 0
@@ -246,15 +219,6 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.9166667
-        value: -3.454018
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.45
         value: -3.454018
         inSlope: 0
         outSlope: 0
@@ -605,7 +569,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 1.5333333333333334
+    m_Start: 1.2166666666666666
     m_ClipIn: 0
     m_Asset: {fileID: -7511833898509254126}
     m_Duration: 0.557278911564626
